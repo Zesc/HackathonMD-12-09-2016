@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<title>MD Hackathon, Dec. 09-11 2016</title>
 	<!-- Styles -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
 	<link rel="stylesheet" href="./ui/accordion/accordion.css">
+	<!--<link rel="stylesheet" href="./ui/expandable/expandable.css">-->
 	<!--<link rel="stylesheet" href="./ui/form/form.css"> -->
 	<link rel="stylesheet" href="./ui/form/form1.css">
 	<link rel="stylesheet" href="./ui/wave/wave.css">
@@ -27,14 +28,19 @@
 		<header class="demo-header">
 			<h1>MD Hackathon, Dec. 09-11 2016</h1>
 			<h2>By <a href="https://github.com/bruceLeeO">@BruceLeeO</a>, <a href="https://github.com/ModernTek">@ModernTek</a>,
-				<a href="https://github.com/yyrcat">@Yyrcat</a>, <a href="https://github.com"/Zesc>@Zesc</a>
+				<a href="https://github.com/yyrcat">@Yyrcat</a>, <a href="https://github.com">@Zesc</a>
 			</h2>
 		</header>
 		<nav class="demo-nav">
 			<ul>
-				<li><a href="#demo-accordion">Accordion</a></li>
-				<li><a href="#demo-wave">Wave</a></li>
+				<!--<li><a href="#expandable">Expandable</a></li>-->
+				<li><a href="#accordion">Accordion</a></li>
+				<li><a href="#wave">Wave</a></li>
 				<li><a href="#form-row">Form Row</a></li>
+				<li><a href="#dropdown">Dropdown</a>
+				<li><a href="#pagination">Pagination</a>
+				<li><a href="#carousel">Carousel</a>
+				<li><a href="#scalling">Scalling</a>
 			</ul>
 		</nav>
 		<main class="demo-main">
@@ -76,81 +82,121 @@
 					</div>
 				</form>		
 			</section>
-                        <!-- Accordion -->
-			<section class="accordion" id="demo-accordion"> <!-- accordion -->
-		        	<h1>Accordion</h1>
-                                <div class="accordion">
-                                	<div class="accordion-panel">
-                                        	<input id="accordion-input-1" class="accordion-input" type="checkbox" name="accordion-1">
-                   				<label for="accordion-input-1" class="accordion-toggle">First</label>
-                   				<div class="accordion-content">
-                     					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-                     					<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-                     					<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-                     					<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-                   				</div>
-                			</div>
-		 			<div class="accordion-panel">
-					      <input id="accordion-input-2" class="accordion-input" type="checkbox" name="accordion-1">
-					      <label for="accordion-input-2" class="accordion-toggle">Second</label>
-					      <div class="accordion-content">
+
+             <!-- Expandable-->
+		<!--	<section class="expandable" id="expandable"> 
+		        <h1>Collapsible/Expandable</h1>
+                <div class="expandable">
+                     <div class="expandable-panel">
+                          <input id="expandable-input-1" class="expandable-input" type="checkbox" name="expandable-1">
+                   		  <label for="expandable-input-1" class="expandable-toggle">First</label>
+                   		  <div class="expandable-content">
+                     		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+                     		  <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+                     		  <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+                     		  <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+                   		  </div>
+                	</div>
+		 			<div class="expandable-panel">
+					     <input id="expandable-input-2" class="expandable-input" type="checkbox" name="expandable-1">
+					     <label for="expandable-input-2" class="expandable-toggle">Second</label>
+					     <div class="expandable-content">
+						     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+						     <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+						     <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+						     <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+					     </div>
+					</div>
+					<div class="expandable-panel">
+					     <input id="expandable-input-3" class="expandable-input" type="checkbox" name="expandable-1">
+					     <label for="expandable-input-3" class="expandable-toggle">Third</label>
+					     <div class="expandable-content">
 						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
 						      <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
 						      <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
 						      <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-					      </div>
-					</div>
-					<div class="accordion-panel">
-					       <input id="accordion-input-3" class="accordion-input" type="checkbox" name="accordion-1">
-					       <label for="accordion-input-3" class="accordion-toggle">Third</label>
-					       <div class="accordion-content">
-						       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-						       <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-						       <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-						       <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-					      </div>
+					     </div>
 					</div>
 				</div>
-			</section> <!--accordion -->
-			<section id="demo-wave"> <!--wave -->
-                          <h1>Wave</h1>
-			  <div class="button">      
-                              <div class="title">Wave</div>
-                              <div>
-                                   <input type="checkbox" id="check-1">
-                 		   <label for="check-1"></label>
+			</section> 
+			<!--expandable -->
+
+			<!-- accordion -->
+			<section class="accordion" id="accordion"> 
+			    <h1>Collapsible/Accordion</h1>
+                <div class="accordion">
+                    <div class="accordion-panel">
+                   		<input id="accordion-input-1" class="accordion-input" type="radio" name="accordion-1">
+                   		<label for="accordion-input-1" class="accordion-toggle">First</label> 
+                   		<div class="accordion-content">
+                     		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+                     		<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+                     		<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+                     		<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+               
+                   		</div>
+                	</div>
+		 			    <div class="accordion-panel">
+						    <input id="accordion-input-2" class="accordion-input" type="radio" name="accordion-1">
+						    <label for="accordion-input-2" class="accordion-toggle">Second</label>
+						    <div class="accordion-content">
+							    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+							    <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+							    <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+							    <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+						    </div>
+					    </div>
+					    <div class="accordion-panel">
+						    <input id="accordion-input-3" class="accordion-input" type="radio" name="accordion-1">
+							<label for="accordion-input-3" class="accordion-toggle">Third</label>
+							<div class="accordion-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+								<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+								<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+								<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+							</div>
+						</div>
+					</div>
+				</section> <!--accordion -->
+				<section id="wave"> <!--wave -->
+                    <h1>Wave</h1>
+			  		<div class="button">      
+                         <div class="title">Wave</div>
+                         <div>
+                             <input type="checkbox" id="check-1">
+                 		     <label for="check-1"></label>
                		     </div>
                		     <div>
-                 		  <input type="checkbox" id="check-2">
-                 		  <label for="check-2"></label>
-                            </div>
-               		    <div>
-                  		 <input type="checkbox" id="check-3">
-                  		 <label for="check-3"></label>
-               		   </div>
-                       <div>
-                 		<input type="checkbox" id="check-4">
-                 		<label for="check-4"></label>
-               		</div>
+                 		    <input type="checkbox" id="check-2">
+                 		    <label for="check-2"></label>
+                         </div>
+               		     <div>
+                  		     <input type="checkbox" id="check-3">
+                  		     <label for="check-3"></label>
+               		     </div>
+                         <div>
+                 		    <input type="checkbox" id="check-4">
+                 		    <label for="check-4"></label>
+               		     </div>
       
-               		<div>
-                 		<input type="checkbox" id="check-5">
-                 		<label for="check-5"></label>
-               		</div>
-               		<div>
-                 		<input type="checkbox" id="check-6">
-                 		<label for="check-6"></label>
-              		</div>
-             	 	<div>
-                		<input type="checkbox" id="check-7">
-                		<label for="check-7"></label>
-              		</div>
-              		<div>
-                		<input type="checkbox" id="check-8">
-                		<label for="check-8"></label>
-              		</div>
-            	  </div>
-          	</section> <!-- wave --> 
+               		     <div>
+                 		    <input type="checkbox" id="check-5">
+                 		    <label for="check-5"></label>
+               		     </div>
+               		     <div>
+                 		    <input type="checkbox" id="check-6">
+                 		    <label for="check-6"></label>
+              		     </div>
+             	 	     <div>
+                		    <input type="checkbox" id="check-7">
+                		    <label for="check-7"></label>
+              		     </div>
+              		     <div>
+                		     <input type="checkbox" id="check-8">
+                		     <label for="check-8"></label>
+              		     </div>
+            	    </div>
+          	  </section> <!-- wave --> 
 	</main>
 	<footer class="demo-footer">
 			<p><a href="https://github.com/ModernTek/HackathonMD-12-09-2016"
