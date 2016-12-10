@@ -1,0 +1,60 @@
+/**
+ * Accordion
+ */
+
+/* Container */
+.accordion {
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Input */
+.accordion-input {
+  display: none;
+}
+
+/* Toggle */
+.accordion-toggle {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+}
+
+/* Toggle: Active State */
+.accordion-input:checked + .accordion-toggle,                
+ .accordion-toggle { 
+  background-color: #fafafa;
+  box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.15);
+}
+
+/* Content */
+.accordion-content {
+  display: none; /* 1 */
+  padding: 0 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Content: Inner Elements */
+.accordion-content > * {
+  margin: 1rem 0;
+}
+
+/* Content: Active State */
+/* 1. Show content */
+.accordion-input:checked ~ .accordion-content { 
+  display: block; /* 1 */
+}
+
+.accordion-input:checked ~ .accordion-content,                          
+.accordion-toggle + * {       
+  border-bottom: 1px solid #e5e5e5;
+}
