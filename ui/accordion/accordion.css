@@ -1,4 +1,4 @@
-/**
+//**
  * Accordion
  */
 
@@ -6,6 +6,7 @@
 .accordion {
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+ 
 }
 
 /* Input */
@@ -32,8 +33,10 @@
 /* Toggle: Active State */
 .accordion-input:checked + .accordion-toggle,                
  .accordion-toggle { 
-  background-color: #fafafa;
+  background-color:#f7594a;
   box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.15);
+   font:20px/1 Lobster,Arial,sans-serif;
+   color:white;
 }
 
 /* Content */
