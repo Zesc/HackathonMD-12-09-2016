@@ -48,17 +48,17 @@
 			<section class="form-row" id="form-row">
 				<form class="col s12">
 					<div class="form-row">
-						<div class="input-field col s6">
+						<div class="input-field col-fn s6">
 							<label for="first_name">First Name</label>
 							<input type="test" name="first_name" id="first_name" placeholder="Placeholder" class="validate">
 						</div>
-						<div class="input-field col s6">
+						<div class="input-field col-ln s6">
 							<label for="last-name">Last Name</label>
 							<input type="text" name="last_name" id="last_name" class="validate">
 						</div>
 						<div class="input-field col s12">
-							<label for="disabled">Disabled</label>
-							<input type="text" name="disabled" id="disabled" value="I am not editable" class="validate" disabled>
+							<label for="disabled" id="label-disabled">Disabled</label>
+							<input type="text" name="disabled" id="form-disabled" value="I am not editable" class="validate" disabled>
 						</div>
 						<div class="input-field col s12">
 							<label for="password">Password</label>
@@ -68,16 +68,19 @@
 							<label for="email">Email</label>
 							<input type="email" name="email" id="email" class="validate">
 						</div>
-						<div class="input-field inline">
+						<div class="input-field inline-desc s3">
 							This is an inline input field:
-							<input type="email" id="email" class="validate" placeholder="Email">
 						</div>
-						<div>
+						<div class="input-field inline-input s3"> 
+							<label for="inline-email">Email</label>
+							<input type="email" id="inline-email" class="validate">
+						</div>
+						<div class="input-field col s12">
 							<label for="comment">Comment</label>
-							<textarea id="comment" rows="4" cols="60"></textarea>
+							<textarea id="comment" rows="4" cols="20"></textarea>
 						</div>
-						<div>
-					  		<button type="submit">Click Me</button>	
+						<div class="input-field col s12">
+					  		<button type="submit" id="button">Click Me</button>	
 					  	</div>
 					</div>
 				</form>		
