@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+}
+#first_name {
+	width: 100%;
+}
+#last_name {
+	width: 100%;
+}
+#form-disabled {
+	width: 100%;
+	background-color: transparent;
+	color: #e6e6e6;
+}
+#label-disabled {
+	color: #e6e6e6;
+	margin-top: 2.25em;
+}
+#password {
+	width: 100%;	
+}
+#email {
+	width: 100%;
+}
+#inline-email {
+	width: 100%;
+}
+#comment {
+	width: 100%;
+	font-size: 22px;
+	border-top: grey;
+	border-right: grey;
+	border-left: grey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#comment:focus {
+	border-color: blue;
+}
+#button {
+	width: 100%;
+	font-size: 22px;
+	border-top: grey;
+	border-right: grey;
+	border-left: grey;
+	background-color: #f2f2f2;
+	margin-bottom: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border: 1px solid grey;
+}
+
+form {
+	/*background-color: #4d94ff;*/
+} 
+
+form div + div {
+	margin-top: 2.25em;
+}
+
+.input-field {
+	display: block;
+	/*border: 1px solid blue;*/
+}
+.col-fn {
+	float: left;
+	margin-left: 4px;
+	margin-top: 36px;
+}
+.col-ln {
+	float: right;
+	margin-bottom: 35px;
+}
+.col {
+	clear: both;
+}
+
+.s6 {
+	width: 47%;
+}
+
+.s12 {
+	width: 100%;
+}
+
+.inline {
+	white-space: nowrap;
+}
+
+.inline-desc {
+	float: left;
+	width: 25%;
+	margin-top: 71px;
+}
+
+.inline-input {
+	float: left;
+	width:25%;
+	margin-bottom: 2.25em;
+}
+
+#form-row input {
+	font-size: 22px;
+	/*border: transparent;*/
+	border-top: grey;
+	border-right: grey;
+	border-left: grey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*
+#form-row {
+	background-color: silver;
+	border-radius: 1em;
+	padding: 2px;
+}
+*/
+
+#form-row input:focus {
+	border-color: blue;
+
+}
