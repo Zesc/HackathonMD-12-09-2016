@@ -3,19 +3,19 @@
  */
 
 /* Container */
-.expendable {
+.expandable {
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
  
 }
 
 /* Input */
-.expendable-input {
+.expandable-input {
   display: none;
 }
 
 /* Toggle */
-.expendable-toggle {
+.expandable-toggle {
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -31,8 +31,8 @@
 }
 
 /* Toggle: Active State */
-.expendable-input:checked + .expendable-toggle,                
- .expendable-toggle { 
+.expandable-input:checked + .expandable-toggle,                
+ .expandable-toggle { 
   background-color:#f7594a;
   box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.15);
    font:20px/1 Lobster,Arial,sans-serif;
@@ -40,24 +40,24 @@
 }
 
 /* Content */
-.expendable-content {
+.expandable-content {
   display: none; /* 1 */
   padding: 0 1rem;
   border-bottom: 1px solid #e5e5e5;
 }
 
 /* Content: Inner Elements */
-.expendable-content > * {
+.expandable-content > * {
   margin: 1rem 0;
 }
 
 /* Content: Active State */
 /* 1. Show content */
-.expendable-input:checked ~ .expendable-content { 
+.expandable-input:checked ~ .expandable-content { 
   display: block; /* 1 */
 }
 
-.expendable-input:checked ~ .expendable-content,                          
-.expendable-toggle + * {       
+.expandable-input:checked ~ .expandable-content,                          
+.expandable-toggle + * {       
   border-bottom: 1px solid #e5e5e5;
 }
