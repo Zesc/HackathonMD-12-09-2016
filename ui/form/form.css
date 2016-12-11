@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+form {
+	margin: 100px auto;
+	width: 650px;
+	background-color: #339933;
+	padding: 1% 1%;
+	border: 2px solid #eff;
+	border-radius: .85em;
+	top: 200px;
+}
+
+form div + div {
+	margin-top: .5em;
+}
+
+label {
+	text-transform: capitalize;
+	font-size: 22px;
+	font-style: italic;
+	width: 190px;
+	text-align: left;
+	display: inline-block;
+	font-weight: 800;
+	border-radius: .95em
+}
+
+p {
+	font-size: 16px;
+	font-style: italic;
+	text-align: left;
+	display: inline-block;
+	font-weight: 800;
+}	
+
+input {
+	color: #ff3300;
+	font-size: 20px;
+	font-style: italic;
+	border: 2px solid #aee;
+	width: 250px;
+}
+
+textarea {
+	color: #ff3300;
+	font-size: 20px;
+	font-style: italic;
+	border: 2px solid #aee;
+	width: 450px;
+}

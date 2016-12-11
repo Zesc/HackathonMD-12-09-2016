@@ -1,31 +1,23 @@
-/**
- * Accordion
+//**
+ * Expandable
  */
 
 /* Container */
-.accordion {
+.expandable {
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
  
 }
 
 /* Input */
-.accordion-input {
+.expandable-input {
   display: none;
 }
-.close{
- /* display:block;*/
-  position:relative;
-  left:99%;
-  top:0px;
-}
-.close{
-  display:inline-block;
-}
+
 /* Toggle */
-.accordion-toggle {
+.expandable-toggle {
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   width: 100%;
   cursor: pointer;
   padding: 1rem;
@@ -39,36 +31,33 @@
 }
 
 /* Toggle: Active State */
-.accordion-input:checked + .accordion-toggle,                
- .accordion-toggle { 
-   background-color:#3498db;
-	border-bottom: solid 8px #2980b9;
+.expandable-input:checked + .expandable-toggle,                
+ .expandable-toggle { 
+  background-color:#f7594a;
   box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.15);
    font:20px/1 Lobster,Arial,sans-serif;
    color:white;
 }
 
 /* Content */
-.accordion-content {
+.expandable-content {
   display: none; /* 1 */
   padding: 0 1rem;
   border-bottom: 1px solid #e5e5e5;
 }
 
 /* Content: Inner Elements */
-.accordion-content > * {
+.expandable-content > * {
   margin: 1rem 0;
 }
 
 /* Content: Active State */
 /* 1. Show content */
-.accordion-input:checked ~ .accordion-content { 
-  display: block; /* 1 */   
+.expandable-input:checked ~ .expandable-content { 
+  display: block; /* 1 */
 }
 
-.accordion-input:checked ~ .accordion-content,                          
-.accordion-toggle + * {       
+.expandable-input:checked ~ .expandable-content,                          
+.expandable-toggle + * {       
   border-bottom: 1px solid #e5e5e5;
-       transition: height 0.1s ease-in-out, box-shadow 0.6s linear; 
-   
 }
