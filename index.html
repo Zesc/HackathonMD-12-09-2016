@@ -1,62 +1,80 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MD Hackathon, Dec. 09-11 2016</title>
-  <!-- Styles -->
-  <link rel="stylesheet" href="./ui/accordion/accordion.css">
-  <link rel="stylesheet" 
-  <link rel="stylesheet" href="./ui/wave/wave.css">
-  <!-- Demo Styles -->
-  <style>
-    body {
-      font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-      margin: 0;
-    }
-    .demo {
-      margin: 1rem;
-      max-width: 800px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>MD Hackathon, Dec. 09-11 2016</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./ui/accordion/accordion.css">
+    <link rel="stylesheet" href="./ui/wave/wave.css">
+    <link rel="stylesheet" href="./ui/pagination/pagination.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-  <div class="demo">
-    <header class="demo-header">
-      <h1>MD Practice Hackathon, Oct. 21-23 2016</h1>
-      <h2>By <a href="https://github.com/bruceLeeO">@BruceLeeO</a>, <a href="https://github.com/ModernTek">@ModernTek</a></h2>
-    </header>
-    <nav class="demo-nav">
-      <ul>
-        <li><a href="#demo-accordion">Accordion</a></li>
-          <li><a href="#demo-wave">Wave</a></li>
-      </ul>
-    </nav>
-    <main class="demo-main">
-     <div class="accordion-panel">
-            <input id="accordion-input-2" class="accordion-input" type="radio" name="accordion-1">
-            <label for="accordion-input-2" class="accordion-toggle">Second</label>
-            <div class="accordion-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-              <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-              <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-              <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-            </div>
-          </div>
-          <div class="accordion-panel">
-            <input id="accordion-input-3" class="accordion-input" type="radio" name="accordion-1">
-            <label for="accordion-input-3" class="accordion-toggle">Third</label>
-            <div class="accordion-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-              <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-              <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-              <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-  </main>
-  <footer class="demo-footer">
-      <p><a href="https://github.com/ModernTek/HackathonMD-12-09-2016>GitHub RepoR</a></p>
-    </footer>
-  </div>
-  </body>
-  </html>    
+    <!-- Pagination Section -->
+    <h2 id="pg-tittle">Pagination Effects</h2>
+    <div class="pg">
+        <p class="pg-p">First Effect:</p>
+        <ul class="pg-container">
+            <li class="pg-li">
+                <a class="pg-a-disable" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            </li>
+            <li class="pg-active-1"><a class="pg-a-active" href="#">1</a></li>
+            <li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">2</a></li>
+            <li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">3</a></li>
+            <li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">4</a></li>
+            <li class="pg-li">
+                <a class="pg-a-disable" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pg">
+     <p class="pg-p">Second Effect:</p>
+     <ul class="pg-container">
+         <li class="pg-li">
+             <a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+         </li>
+         <li class="pg-active-2"><a class="pg-a-active" id="pg-c" href="#">1</a></li>
+         <li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">2</a></li>
+         <li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">3</a></li>
+         <li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">4</a></li>
+         <li class="pg-li">
+             <a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+         </li>
+     </ul>
+    </div>
+
+    <div class="pg">
+         <p class="pg-p">Third Effect:</p>
+         <ul class="pg-container">
+             <li class="pg-li">
+                 <a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+             </li>
+             <li class="pg-active-3"><a class="pg-a-active" id="pg-c" href="#">1</a></li>
+             <li class="pg-li pg-effect-3"><a class="pg-a-disable" href="#">2</a></li>
+             <li class="pg-li pg-effect-3"><a class="pg-a-disable" href="#">3</a></li>
+             <li class="pg-li pg-effect-3"><a class="pg-a-disable" href="#">4</a></li>
+             <li class="pg-li">
+                 <a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+             </li>
+         </ul>
+    </div>
+
+    <div class="pg">
+        <p class="pg-p">Fourth Effect:</p>
+        <ul class="pg-container">
+            <li class="pg-li">
+                <a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            </li>
+            <li class="pg-active-4"><a class="pg-a-active" href="#">1</a></li>
+            <li class="pg-li pg-effect-4"><a class="pg-a-disable" href="#">2</a></li>
+            <li class="pg-li pg-effect-4"><a class="pg-a-disable" href="#">3</a></li>
+            <li class="pg-li pg-effect-4"><a class="pg-a-disable" href="#">4</a></li>
+            <li class="pg-li">
+                <a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
