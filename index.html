@@ -1,29 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>MD Hackathon, Dec. 09-11 2016</title>
-	<!-- Styles -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
-	<link rel="stylesheet" href="./ui/accordion/accordion.css">
-	<link rel="stylesheet" href="./ui/expandable/expandable.css">
-	<!--<link rel="stylesheet" href="./ui/form/form.css"> -->
-	<link rel="stylesheet" href="./ui/form/form1.css">
-	<link rel="stylesheet" href="./ui/wave/wave.css">
-	<!-- Demo Styles -->
-	<style>
-		body {
-			font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-			margin: 0;
-		}
-		.demo {
-			margin: 1rem;
-			max-width: 800px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>MD Hackathon, Dec. 09-11 2016</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./ui/accordion/accordion.css">
+    <link rel="stylesheet" href="./ui/wave/wave.css">
+    <link rel="stylesheet" href="./ui/pagination/pagination.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-
 	<div class="demo">
 		<header class="demo-header">
 			<h1>MD Hackathon, Dec. 09-11 2016</h1>
@@ -201,11 +188,78 @@
             	    </div>
           	  </section> <!-- wave --> 
 	</main>
-	<footer class="demo-footer">
-			<p><a href="https://github.com/ModernTek/HackathonMD-12-09-2016"
-			>GitHub RepoR</a></p>
-		</footer>
 	</div>
-	</body>
-	</html>    
-Contact GitHub 
+
+	<!-- Pagination Section -->
+	<h2 id="pg-tittle">Pagination Effects</h2>
+	<div class="pg">
+		<p class="pg-p">First Effect:</p>
+		<ul class="pg-container">
+			<li class="pg-li">
+				<a class="pg-a-disable" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+			</li>
+			<li class="pg-active-1"><a class="pg-a-active" href="#">1</a></li>
+			<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">2</a></li>
+			<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">3</a></li>
+			<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">4</a></li>
+			<li class="pg-li">
+				<a class="pg-a-disable" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pg">
+		<p class="pg-p">Second Effect:</p>
+		<ul class="pg-container">
+			<li class="pg-li">
+				<a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+			</li>
+			<li class="pg-active-2"><a class="pg-a-active pg-c"  href="#">1</a></li>
+			<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">2</a></li>
+			<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">3</a></li>
+			<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">4</a></li>
+			<li class="pg-li">
+				<a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pg">
+		<p class="pg-p">Third Effect:</p>
+		<ul class="pg-container">
+			<li class="pg-li">
+				<a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+			</li>
+			<li class="pg-active-3"><a class="pg-a-active pg-c" href="#">1</a></li>
+			<li class="pg-li pg-effect-3"><a class="pg-a-disable" href="#">2</a></li>
+			<li class="pg-li pg-effect-3"><a class="pg-a-disable" href="#">3</a></li>
+			<li class="pg-li pg-effect-3"><a class="pg-a-disable" href="#">4</a></li>
+			<li class="pg-li">
+				<a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pg">
+		<p class="pg-p">Fourth Effect:</p>
+		<ul class="pg-container">
+			<li class="pg-li">
+				<a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+			</li>
+			<li class="pg-active-4"><a class="pg-a-active" href="#">1</a></li>
+			<li class="pg-li pg-effect-4"><a class="pg-a-disable" href="#">2</a></li>
+			<li class="pg-li pg-effect-4"><a class="pg-a-disable" href="#">3</a></li>
+			<li class="pg-li pg-effect-4"><a class="pg-a-disable" href="#">4</a></li>
+			<li class="pg-li">
+				<a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+			</li>
+		</ul>
+	</div>
+
+    <!--footer-->
+    <footer class="demo-footer">
+        <p><a href="https://github.com/ModernTek/HackathonMD-12-09-2016"
+        >GitHub Repository</a></p>
+    </footer>
+</body>
+</html>
