@@ -9,12 +9,14 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   text-align: center;
+  color: #30a6ff
 }
 
 .pg-p{
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 200;
+  color: rgba(30, 90, 139, 0.86);
 }
 
 .glyphicon:hover{
