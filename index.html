@@ -2,17 +2,22 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MD Hackathon, Dec. 09-11 2016</title>
-    <!-- Styles -->
-     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
-    <link rel="stylesheet" href="./ui/accordion/accordion.css">
-    <link rel="stylesheet"  href="./ui/expandable/expandable.css">
-    <link rel="stylesheet" href="./ui/wave/wave.css">
-    <link rel="stylesheet" href="./ui/form/form.css">
-    <link rel="stylesheet" href="./ui/form/form1.css">
-    <link rel="stylesheet" href="./ui/pagination/pagination.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>MD Hackathon, Dec. 09-11 2016</title>
+	<!-- Styles -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+	<link rel="stylesheet" href="./ui/accordion/accordion.css">
+	<link rel="stylesheet"  href="./ui/expandable/expandable.css">
+	<link rel="stylesheet" href="./ui/wave/wave.css">
+	<link rel="stylesheet" href="./ui/form/form.css">
+	<link rel="stylesheet" href="./ui/form/form1.css">
+	<link rel="stylesheet" href="./ui/pagination/pagination.css">
+	<link rel="stylesheet" href="./ui/carousel/carousel.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
 	<div class="demo">
@@ -29,205 +34,204 @@
 				<li><a href="#wave">Wave</a></li>
 				<li><a href="#form-row">Form Row</a></li>
 				<li><a href="#dropdown">Dropdown</a>
-				<li><a href="#pagination">Pagination</a>
-				<li><a href="#carousel">Carousel</a>
-				<li><a href="#scalling">Scalling</a>
-			</ul>
-		</nav>
-		<main class="demo-main">
-			<!-- Forms, Input fields, and textarea -->
-			<section class="form-row" id="form-row">
-				<form class="col s12">
-					<div class="form-row">
-						<div class="input-field col-fn s6">
-							<label for="first_name">First Name</label>
-							<input type="test" name="first_name" id="first_name" placeholder="Placeholder" class="validate">
-						</div>
-						<div class="input-field col-ln s6">
-							<label for="last-name">Last Name</label>
-							<input type="text" name="last_name" id="last_name" class="validate">
-						</div>
-						<div class="input-field col s12">
-							<label for="disabled" id="label-disabled">Disabled</label>
-							<input type="text" name="disabled" id="form-disabled" value="I am not editable" class="validate" disabled>
-						</div>
-						<div class="input-field col s12">
-							<label for="password">Password</label>
-							<input type="password" name="password" id="password" class="validate">
-						</div>
-						<div class="input-field col s12">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" class="validate">
-						</div>
-						<div class="input-field inline-desc s3">
-							This is an inline input field:
-						</div>
-						<div class="input-field inline-input s3"> 
-							<label for="inline-email">Email</label>
-							<input type="email" id="inline-email" class="validate">
-						</div>
-						<div class="input-field col s12">
-							<label for="comment">Comment</label>
-							<textarea id="comment" rows="4" cols="20"></textarea>
-						</div>
-						<div class="input-field col s12">
-					  		<button type="submit" id="button">Click Me</button>	
-					  	</div>
-					</div>
-				</form>		
-			</section>
+					<li><a href="#pagination">Pagination</a>
+						<li><a href="#carousel">Carousel</a>
+						</ul>
+					</nav>
+					<main class="demo-main">
+						<!-- Forms, Input fields, and textarea -->
+						<section class="form-row" id="form-row">
+							<form class="col s12">
+								<div class="form-row">
+									<div class="input-field col-fn s6">
+										<label for="first_name">First Name</label>
+										<input type="test" name="first_name" id="first_name" placeholder="Placeholder" class="validate">
+									</div>
+									<div class="input-field col-ln s6">
+										<label for="last-name">Last Name</label>
+										<input type="text" name="last_name" id="last_name" class="validate">
+									</div>
+									<div class="input-field col s12">
+										<label for="disabled" id="label-disabled">Disabled</label>
+										<input type="text" name="disabled" id="form-disabled" value="I am not editable" class="validate" disabled>
+									</div>
+									<div class="input-field col s12">
+										<label for="password">Password</label>
+										<input type="password" name="password" id="password" class="validate">
+									</div>
+									<div class="input-field col s12">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" class="validate">
+									</div>
+									<div class="input-field inline-desc s3">
+										This is an inline input field:
+									</div>
+									<div class="input-field inline-input s3"> 
+										<label for="inline-email">Email</label>
+										<input type="email" id="inline-email" class="validate">
+									</div>
+									<div class="input-field col s12">
+										<label for="comment">Comment</label>
+										<textarea id="comment" rows="4" cols="20"></textarea>
+									</div>
+									<div class="input-field col s12">
+										<button type="submit" id="button">Click Me</button>	
+									</div>
+								</div>
+							</form>		
+						</section>
 
-             <!-- Expandable-->
-			<section class="expandable" id="expandable"> 
-		        <h1>Collapsible/Expandable</h1>
-                <div class="expandable">
-                     <div class="expandable-panel">
-                          <input id="expandable-input-1" class="expandable-input" type="checkbox" name="expandable-1">
-                   		  <label for="expandable-input-1" class="expandable-toggle">First</label>
-                   		  <div class="expandable-content">
-                     		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-                     		  <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-                     		  <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-                     		  <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-                   		  </div>
-                	</div>
-		 			<div class="expandable-panel">
-					     <input id="expandable-input-2" class="expandable-input" type="checkbox" name="expandable-1">
-					     <label for="expandable-input-2" class="expandable-toggle">Second</label>
-					     <div class="expandable-content">
-						     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-						     <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-						     <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-						     <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-					     </div>
-					</div>
-					<div class="expandable-panel">
-					     <input id="expandable-input-3" class="expandable-input" type="checkbox" name="expandable-1">
-					     <label for="expandable-input-3" class="expandable-toggle">Third</label>
-					     <div class="expandable-content">
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-						      <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-						      <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-						      <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-					     </div>
-					</div>
-				</div>
-			</section> 
-			<!--expandable -->
-
-			<!-- accordion -->
-			<section class="accordion" id="accordion"> 
-			    <h1>Collapsible/Accordion</h1>
-                <div class="accordion">
-                    <div class="accordion-panel">
-                   		<input id="accordion-input-1" class="accordion-input" type="radio" name="accordion-1">
-                   		<label for="accordion-input-1" class="accordion-toggle">First</label> 
-                   		<div class="accordion-content">
-                     		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-                     		<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-                     		<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-                     		<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-               
-                   		</div>
-                	</div>
-		 			    <div class="accordion-panel">
-						    <input id="accordion-input-2" class="accordion-input" type="radio" name="accordion-1">
-						    <label for="accordion-input-2" class="accordion-toggle">Second</label>
-						    <div class="accordion-content">
-							    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-							    <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-							    <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-							    <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
-						    </div>
-					    </div>
-					    <div class="accordion-panel">
-						    <input id="accordion-input-3" class="accordion-input" type="radio" name="accordion-1">
-							<label for="accordion-input-3" class="accordion-toggle">Third</label>
-							<div class="accordion-content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
-								<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
-								<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
-								<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+						<!-- Expandable-->
+						<section class="expandable" id="expandable"> 
+							<h1>Collapsible/Expandable</h1>
+							<div class="expandable">
+								<div class="expandable-panel">
+									<input id="expandable-input-1" class="expandable-input" type="checkbox" name="expandable-1">
+									<label for="expandable-input-1" class="expandable-toggle">First</label>
+									<div class="expandable-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+										<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+										<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+										<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+									</div>
+								</div>
+								<div class="expandable-panel">
+									<input id="expandable-input-2" class="expandable-input" type="checkbox" name="expandable-1">
+									<label for="expandable-input-2" class="expandable-toggle">Second</label>
+									<div class="expandable-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+										<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+										<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+										<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+									</div>
+								</div>
+								<div class="expandable-panel">
+									<input id="expandable-input-3" class="expandable-input" type="checkbox" name="expandable-1">
+									<label for="expandable-input-3" class="expandable-toggle">Third</label>
+									<div class="expandable-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+										<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+										<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+										<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</section> <!--accordion -->
-				<section id="wave"> <!--wave -->
-                    <h1>Wave</h1>
-			  		<div class="button">      
-                         <div class="title">Wave</div>
-                         <div>
-                             <input type="checkbox" id="check-1">
-                 		     <label for="check-1"></label>
-               		     </div>
-               		     <div>
-                 		    <input type="checkbox" id="check-2">
-                 		    <label for="check-2"></label>
-                         </div>
-               		     <div>
-                  		     <input type="checkbox" id="check-3">
-                  		     <label for="check-3"></label>
-               		     </div>
-                         <div>
-                 		    <input type="checkbox" id="check-4">
-                 		    <label for="check-4"></label>
-               		     </div>
-      
-               		     <div>
-                 		    <input type="checkbox" id="check-5">
-                 		    <label for="check-5"></label>
-               		     </div>
-               		     <div>
-                 		    <input type="checkbox" id="check-6">
-                 		    <label for="check-6"></label>
-              		     </div>
-             	 	     <div>
-                		    <input type="checkbox" id="check-7">
-                		    <label for="check-7"></label>
-              		     </div>
-              		     <div>
-                		     <input type="checkbox" id="check-8">
-                		     <label for="check-8"></label>
-              		     </div>
-            	    </div>
-          	  </section> <!-- wave --> 
+						</section> 
+						<!--expandable -->
+
+						<!-- accordion -->
+						<section class="accordion" id="accordion"> 
+							<h1>Collapsible/Accordion</h1>
+							<div class="accordion">
+								<div class="accordion-panel">
+									<input id="accordion-input-1" class="accordion-input" type="radio" name="accordion-1">
+									<label for="accordion-input-1" class="accordion-toggle">First</label> 
+									<div class="accordion-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+										<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+										<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+										<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+
+									</div>
+								</div>
+								<div class="accordion-panel">
+									<input id="accordion-input-2" class="accordion-input" type="radio" name="accordion-1">
+									<label for="accordion-input-2" class="accordion-toggle">Second</label>
+									<div class="accordion-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+										<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+										<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+										<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+									</div>
+								</div>
+								<div class="accordion-panel">
+									<input id="accordion-input-3" class="accordion-input" type="radio" name="accordion-1">
+									<label for="accordion-input-3" class="accordion-toggle">Third</label>
+									<div class="accordion-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+										<p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+										<p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+										<p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+									</div>
+								</div>
+							</div>
+						</section> <!--accordion -->
+						<section id="wave"> <!--wave -->
+							<h1>Wave</h1>
+							<div class="button">      
+								<div class="title">Wave</div>
+								<div>
+									<input type="checkbox" id="check-1">
+									<label for="check-1"></label>
+								</div>
+								<div>
+									<input type="checkbox" id="check-2">
+									<label for="check-2"></label>
+								</div>
+								<div>
+									<input type="checkbox" id="check-3">
+									<label for="check-3"></label>
+								</div>
+								<div>
+									<input type="checkbox" id="check-4">
+									<label for="check-4"></label>
+								</div>
+
+								<div>
+									<input type="checkbox" id="check-5">
+									<label for="check-5"></label>
+								</div>
+								<div>
+									<input type="checkbox" id="check-6">
+									<label for="check-6"></label>
+								</div>
+								<div>
+									<input type="checkbox" id="check-7">
+									<label for="check-7"></label>
+								</div>
+								<div>
+									<input type="checkbox" id="check-8">
+									<label for="check-8"></label>
+								</div>
+							</div>
+						</section> <!-- wave --> 
 	<!--</main>
-	</div>-->
+</div>-->
 
-	<!-- Pagination Section -->
-	<h2 id="pg-tittle">Pagination Effects</h2>
-	<div class="pg">
-		<p class="pg-p">First Effect:</p>
-		<ul class="pg-container">
-			<li class="pg-li">
-				<a class="pg-a-disable" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-			</li>
-			<li class="pg-active-1"><a class="pg-a-active" href="#">1</a></li>
-			<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">2</a></li>
-			<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">3</a></li>
-			<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">4</a></li>
-			<li class="pg-li">
-				<a class="pg-a-disable" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-			</li>
-		</ul>
-	</div>
+<!-- Pagination Section -->
+<h2 id="pg-tittle">Pagination Effects</h2>
+<div class="pg">
+	<p class="pg-p">First Effect:</p>
+	<ul class="pg-container">
+		<li class="pg-li">
+			<a class="pg-a-disable" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+		</li>
+		<li class="pg-active-1"><a class="pg-a-active" href="#">1</a></li>
+		<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">2</a></li>
+		<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">3</a></li>
+		<li class="pg-li pg-effect-1"><a class="pg-a-disable" href="#!">4</a></li>
+		<li class="pg-li">
+			<a class="pg-a-disable" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+		</li>
+	</ul>
+</div>
 
-	<div class="pg">
-		<p class="pg-p">Second Effect:</p>
-		<ul class="pg-container">
-			<li class="pg-li">
-				<a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-			</li>
-			<li class="pg-active-2"><a class="pg-a-active pg-c"  href="#">1</a></li>
-			<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">2</a></li>
-			<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">3</a></li>
-			<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">4</a></li>
-			<li class="pg-li">
-				<a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-			</li>
-		</ul>
-	</div>
-    <section id="pagination">
+<div class="pg">
+	<p class="pg-p">Second Effect:</p>
+	<ul class="pg-container">
+		<li class="pg-li">
+			<a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+		</li>
+		<li class="pg-active-2"><a class="pg-a-active pg-c"  href="#">1</a></li>
+		<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">2</a></li>
+		<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">3</a></li>
+		<li class="pg-li pg-effect-2"><a class="pg-a-disable" href="#">4</a></li>
+		<li class="pg-li">
+			<a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+		</li>
+	</ul>
+</div>
+<section id="pagination">
 	<div class="pg">
 		<p class="pg-p">Third Effect:</p>
 		<ul class="pg-container">
@@ -259,14 +263,155 @@
 			</li>
 		</ul>
 	</div>
-  </section> 	
-</main>
+</section> 	
+
+
+<!--carousel 3d By Yeuri Yu-->
+
+<h2 id="pg-tittle">Carousel</h2>
+
+<div class="slider--3d-container">
+
+	<figure id="carousel--3d">
+		<input type="radio" name="carousel-3d" id="carousel-3d-controller-1"/>
+		<input type="radio"  name="carousel-3d" id="carousel-3d-controller-2"/>
+		<input type="radio"  name="carousel-3d" id="carousel-3d-controller-3"/>
+		<input type="radio"  name="carousel-3d" id="carousel-3d-controller-4"/>
+		<input type="radio"  name="carousel-3d" id="carousel-3d-controller-5"/>
+		<label for="carousel-3d-controller-1" class="carousel-3d-item"><img src="https://i.imgsafe.org/c341c4aae0.png" alt="" /></label>
+		<label for="carousel-3d-controller-2" class="carousel-3d-item"><img src="https://i.imgsafe.org/c341c8bf16.png" alt="" /></label>
+		<label for="carousel-3d-controller-3" class="carousel-3d-item"><img src="https://i.imgsafe.org/c341d2f693.png" alt="" /></label>
+		<label for="carousel-3d-controller-4" class="carousel-3d-item"><img src="https://i.imgsafe.org/c341d87d75.png" alt="" /></label>
+		<label for="carousel-3d-controller-5" class="carousel-3d-item"><img src="https://i.imgsafe.org/c341e49b2b.png" alt="" /></label>
+	</figure>
+</div>
+
+
+
+
+<!--carousel draggable incomplete-->
+<div class="slider--draggable-container">
+
+	<figure id="slider--touchable">
+		<img  class="slider--touchable-item" src="https://i.imgsafe.org/c6fe407b3b.png" alt="" />
+		<img  class="slider--touchable-item" src="https://i.imgsafe.org/c6fe46e4f5.png" alt="" /> 
+		<img  class="slider--touchable-item" src="https://i.imgsafe.org/c6fe50ba76.png" alt="" />
+		<img  class="slider--touchable-item" src="https://i.imgsafe.org/c6fe5491d5.png" alt="" />
+	</figure>
+</div>
+
+
+
+
+
+<!--carousel with fixed button-->
+<div class="tab-slider__container">
+	<!--round dot controller-->
+	<input type="radio" name="slider" id="slider__controller--1" checked/>
+	<label class="slider__controller" for="slider__controller--1"></label>
+	<input type="radio" name="slider" id="slider__controller--2" />
+	<label class="slider__controller" for="slider__controller--2"></label>
+	<input type="radio" name="slider" id="slider__controller--3" />
+	<label class="slider__controller" for="slider__controller--3"></label>
+	<input type="radio" name="slider" id="slider__controller--4" />
+	<label class="slider__controller" for="slider__controller--4"></label>
+
+	<!--left direction-->
+	<label for="slider__controller--1" class="controller__label"><i class="fa fa-chevron-left tab-slider__controller--left-1" aria-hidden="true"></i></label>
+	<label for="slider__controller--2" class="controller__label"><i class="fa fa-chevron-left tab-slider__controller--left-2" aria-hidden="true"></i></label>
+	<label for="slider__controller--3" class="controller__label"><i class="fa fa-chevron-left tab-slider__controller--left-3" aria-hidden="true"></i></label>
+	<!--right direction-->
+	<label for="slider__controller--2" class="controller__label">
+		<i class="fa fa-chevron-right tab-slider__controller--right-1" aria-hidden="true"></i></label>
+		<label for="slider__controller--3" class="controller__label">
+			<i class="fa fa-chevron-right tab-slider__controller--right-2" aria-hidden="true"></i></label>
+			<label for="slider__controller--4" class="controller__label">
+				<i class="fa fa-chevron-right tab-slider__controller--right-3" aria-hidden="true"></i></label>
+
+				<!--fixed button-->
+				<input type="button" value="BUTTON" id="slider--fixed-button"/>
+
+				<!--slider content-->
+
+				<ul class="tab-slider__content">
+					<li class="tab-slider__content__item">
+						<h3>Today is Monday.</h3>
+					</li>
+					<li class="tab-slider__content__item">
+						<h3>Today is Tuesday.</h3>
+					</li>
+					<li class="tab-slider__content__item">
+						<h3>Today is Wednesday.</h3>
+					</li>
+					<li class="tab-slider__content__item">
+						<h3>Today is Thursday.</h3>
+					</li>
+				</ul>
+
+			</div>
+
+
+			<!--fading carousel-->
+
+			<div class="slider-container">
+				<ul class="slider__content">
+					<input type="radio" name="slider__controller" id="controller-1" checked/>
+					<li class="slider__content-item">
+						<div class="item-holder">
+							<img src="https://i.imgsafe.org/c341c4aae0.png" alt="" />
+							<h3>Today is Monday.</h3>
+						</div>
+
+						<div class="slider-nav">
+							<label for="controller-4" class="slider-nav--pre">&#x2039;</label>
+							<label for="controller-2" class="slider-nav--next">&#x203a;</label>
+						</div>
+					</li>
+					<input type="radio" name="slider__controller" id="controller-2" />
+					<li class="slider__content-item">
+						<div class="item-holder">
+							<img src="https://i.imgsafe.org/c341c8bf16.png" alt="" />
+						</div>
+						<div class="slider-nav">
+							<label for="controller-1" class="slider-nav--pre">&#x2039;</label>
+							<label for="controller-3" class="slider-nav--next">&#x203a;</label>
+						</div>
+
+					</li>
+					<input type="radio" name="slider__controller" id="controller-3" />
+					<li class="slider__content-item">
+						<div class="item-holder">
+							<img src="https://i.imgsafe.org/c341d2f693.png" alt="" />
+						</div>
+
+						<div class="slider-nav">
+							<label for="controller-2" class="slider-nav--pre">&#x2039;</label>
+							<label for="controller-4" class="slider-nav--next">&#x203a;</label>
+						</div>
+					</li>
+					<input type="radio" name="slider__controller" id="controller-4" />
+					<li class="slider__content-item">
+						<div class="item-holder">
+							<img src="https://i.imgsafe.org/c341d87d75.png" alt="" />
+						</div>
+
+						<div class="slider-nav">
+							<label for="controller-3" class="slider-nav--pre">&#x2039;</label>
+							<label for="controller-1" class="slider-nav--next">&#x203a;</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</main>
 	</div>
 
-    <!--footer-->
-    <footer class="demo-footer">
-        <p><a href="https://github.com/ModernTek/HackathonMD-12-09-2016"
-        >GitHub Repository</a></p>
-    </footer>
-</body>
-</html>
+	<!--footer-->
+	<footer class="demo-footer">
+		<p><a href="https://github.com/ModernTek/HackathonMD-12-09-2016"
+			>GitHub Repository</a></p>
+		</footer>
+
+		<script src="./ui/carousel/drag.js"></script>
+	</body>
+	</html>
